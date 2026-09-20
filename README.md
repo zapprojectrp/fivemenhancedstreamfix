@@ -24,3 +24,5 @@ files {
 data_file 'VEHICLE_METADATA_FILE' 'vehicles.meta'
 data_file 'VEHICLE_VARIATION_FILE' 'carvariations.meta'
 data_file 'HANDLING_FILE' 'handling.meta'
+```
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/zapproject)
