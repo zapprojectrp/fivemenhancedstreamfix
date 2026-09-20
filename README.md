@@ -1,8 +1,19 @@
-### For Owners/Devs whose servers fail to load or throw errors when adding custom maps or addon/custom vehicles to **FiveM Enhanced**, I’ve found a way to get them working.
+# 🛠️ FiveM Enhanced: Addon Vehicles & Custom Maps Fix
 
-In the **fxmanifest.lua**:
+> A quick workaround for server owners and developers experiencing loading failures or console errors when streaming custom maps and addon vehicles in **FiveM Enhanced**.
 
-```
+## ⚠️ The Problem
+When adding custom content (vehicles, maps) using the modern `cerulean` manifest version, the server may fail to load the resources properly or throw metadata errors in the console.
+
+## ✅ The Solution
+Changing the resource manifest version to `bodacious` resolves the loading errors for these assets. 
+
+### Update your `fxmanifest.lua`
+Replace your current manifest header with the following configuration:
+
+
+EXAMPLE:
+```lua 
 fx_version 'bodacious'
 game 'gta5'
 
@@ -15,11 +26,3 @@ files {
 data_file 'VEHICLE_METADATA_FILE' 'vehicles.meta'
 data_file 'VEHICLE_VARIATION_FILE' 'carvariations.meta'
 data_file 'HANDLING_FILE' 'handling.meta'
-```
-
-Use the [bodacious (2020-02)](https://docs.fivem.net/docs/scripting-reference/resource-manifest/#fx-version-cerulean-2020-05) version instead of the [cerulean  (2020-05)](https://docs.fivem.net/docs/scripting-reference/resource-manifest/#fx-version-cerulean-2020-05) one.
-
-
-I don't know why, but this works on my server.
-If anyone knows of any other solution, please share it. 
-I hope this helps you!!
