@@ -11,8 +11,6 @@ Changing the resource manifest version to `bodacious` resolves the loading error
 ### Update your `fxmanifest.lua`
 Replace your current manifest header with the following configuration:
 
-
-EXAMPLE:
 ```lua 
 fx_version 'bodacious'
 game 'gta5'
